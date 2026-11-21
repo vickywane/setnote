@@ -1,0 +1,24 @@
+{
+  "name": "setnote-demo",
+  "private": true,
+  "description": "Product demo video for Setnote, made with Remotion. Separate from the Expo app.",
+  "scripts": {
+    "studio": "remotion studio",
+    "render": "remotion render SetnoteDemo out/setnote-demo.mp4",
+    "still": "remotion still SetnoteDemo out/poster.png --frame=60",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.545",
+    "@remotion/google-fonts": "4.0.545",
+    "@remotion/media-parser": "^4.0.545",
+    "@remotion/transitions": "4.0.545",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "remotion": "4.0.545"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.0",
+    "typescript": "^5.9.0"
+  }
+}

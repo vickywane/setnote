@@ -1,0 +1,11 @@
+{
+  "hook": "ELEVENLABS SIA — Last set. That one felt brutal.",
+  "log-sets": "ELEVENLABS SIA — Two taps. Your last set is ready to go, and your rest timer starts the moment you log.",
+  "write-it-down": "ELEVENLABS SIA — Then scribble. Setnote reads the note and turns weight, sets and reps into a log with one tap.",
+  "consent": "ELEVENLABS SIA — Setnote explains the check, and the camera waits until you tap Start. Every time.",
+  "scan": "ELEVENLABS SIA — Presage SmartSpectra turns the front camera into a vitals sensor. It reads pulse and breathing live, on the phone. No strap. No watch. Nothing to charge.",
+  "results": "ELEVENLABS SIA — Pulse seventy-seven. Breathing twenty-three. Saved right here, beside the set.",
+  "architecture": "ELEVENLABS SIA — SmartSpectra runs on-device through a native Expo module. Only readings sync to Setnote in Supabase.",
+  "privacy": "ELEVENLABS SIA — By default, your check video is not sent off the phone or saved. If you opt in, videos are private to your account; as a guest, they stay on your phone. Presage processes video on-device; only readings sync.",
+  "outro": "ELEVENLABS SIA — Lift heavy. Listen to your body. Setnote."
+}

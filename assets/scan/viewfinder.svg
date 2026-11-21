@@ -1,0 +1,5 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="300" height="300" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Viewfinder">
+<path id="Vector" d="M4 56V28C4 21.6348 6.52856 15.5303 11.0294 11.0294C15.5303 6.52856 21.6348 4 28 4H56M244 4H272C278.365 4 284.47 6.52856 288.971 11.0294C293.471 15.5303 296 21.6348 296 28V56M296 244V272C296 278.365 293.471 284.47 288.971 288.971C284.47 293.471 278.365 296 272 296H244M56 296H28C21.6348 296 15.5303 293.471 11.0294 288.971C6.52856 284.47 4 278.365 4 272V244" stroke-width="5" stroke-linecap="round" stroke="white"/>
+</g>
+</svg>

@@ -1,0 +1,30 @@
+{
+  "expo": {
+    "name": "Setnote",
+    "slug": "setnote",
+    "scheme": "setnote",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "plugins": [
+      "expo-router",
+      "expo-status-bar",
+      "expo-font"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "root": "src/app"
+      }
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "app.setnote.mobile"
+    },
+    "android": {
+      "package": "app.setnote.mobile"
+    }
+  }
+}

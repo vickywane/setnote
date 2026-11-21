@@ -1,0 +1,10 @@
+assets/
+ios/
+android/
+coverage/
+dist/
+.expo/
+package-lock.json
+src/types/database.ts
+supabase/.temp
+demo/
