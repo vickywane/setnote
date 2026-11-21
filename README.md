@@ -1,6 +1,6 @@
 # Setnote
 
-Setnote is a mobile-first training journal built for the Gym Notes Figma and the Presage SmartSpectra SDK challenge. The current implementation includes the Notes home and date strip, standalone and exercise notes, local note extraction, voice capture and clips, structured sessions with set editing and undo, rest and session timers, History, Settings, account flows, custom exercises, unit preferences, and the optional iOS recovery-check flow.
+Setnote is a mobile-first training journal built for the Presage SmartSpectra SDK challenge. The current implementation includes the Notes home and date strip, standalone and exercise notes, local note extraction, voice capture and clips, structured sessions with set editing and undo, rest and session timers, History, Settings, account flows, custom exercises, unit preferences, and the optional iOS recovery-check flow.
 
 ## Screenshots
 
