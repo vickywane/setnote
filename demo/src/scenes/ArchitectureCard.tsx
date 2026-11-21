@@ -64,7 +64,7 @@ export function ArchitectureCard() {
             letterSpacing: 3,
             color: '#F59A7B',
           }}>
-          ON THE PHONE · THE SDK NEVER SENDS VIDEO
+          ON THE PHONE · VIDEO IS PROCESSED HERE
         </div>
       </div>
 
@@ -152,7 +152,7 @@ export function ArchitectureCard() {
 
       <Rise delay={10 + NODES.length * STEP + 6} style={{ position: 'absolute', left: 220, top: 830 }}>
         <div style={{ fontFamily: font.body, fontSize: 30, color: '#BEB8AE', maxWidth: 1480 }}>
-          The SDK only contacts Presage to check the app’s licence. Usage telemetry is off.
+          Usage telemetry is off. The SDK still makes signed-in calls to Presage, such as the licence check.
         </div>
       </Rise>
     </AbsoluteFill>

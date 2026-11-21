@@ -2,6 +2,24 @@
 
 Setnote is a mobile-first training journal built for the Gym Notes Figma and the Presage SmartSpectra SDK challenge. The current implementation includes the Notes home and date strip, standalone and exercise notes, local note extraction, voice capture and clips, structured sessions with set editing and undo, rest and session timers, History, Settings, account flows, custom exercises, unit preferences, and the optional iOS recovery-check flow.
 
+## Screenshots
+
+<table>
+  <tr>
+    <td align="center" width="20%"><img src="docs/images/screen-1-log-sets.png" alt="A session with two Squat sets logged and the rest timer running"><br><sub>Log a set in two taps; the rest timer starts on its own</sub></td>
+    <td align="center" width="20%"><img src="docs/images/screen-2-write-it-down.png" alt="A typed Deadlift note with a sheet offering to log 3 sets of 5 at 120 kg"><br><sub>A typed note becomes sets in one tap</sub></td>
+    <td align="center" width="20%"><img src="docs/images/screen-3-live-check.png" alt="The 45-second camera check showing pulse 75 bpm and 23 breaths per minute"><br><sub>Live SmartSpectra check on an iPhone</sub></td>
+    <td align="center" width="20%"><img src="docs/images/screen-4-result.png" alt="The result screen with pulse 77 bpm and 23 breaths per minute and a Save with exercise button"><br><sub>The result, before saving</sub></td>
+    <td align="center" width="20%"><img src="docs/images/screen-5-saved-with-set.png" alt="The session screen with a pill reading Pulse 77, 23 breaths/min under Bench press"><br><sub>The reading saved with the exercise</sub></td>
+  </tr>
+</table>
+
+## Architecture
+
+![The front camera feeds the SmartSpectra SDK on the phone, which passes vitals to the PresageVitals Swift module and then to the React Native app. Only the numbers sync to Supabase.](docs/images/architecture.png)
+
+The SmartSpectra SDK reads pulse, breathing and HRV from the front camera on the phone. `modules/presage-vitals` is a local Expo module in Swift that starts and stops the SDK and sends samples to JavaScript every 250 ms. The app keeps the confident samples, saves their median, and syncs only those numbers to Supabase, where row-level security limits each row to its owner. SDK telemetry is off (`enableTelemetry = false`). The SDK's xcframework isn't checked in: `PresageVitals.podspec` downloads it on `pod install` and checks its SHA-256.
+
 ## Requirements
 
 - Node.js 20.19 or newer

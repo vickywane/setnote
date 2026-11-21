@@ -1,6 +1,7 @@
 import { parseMedia } from '@remotion/media-parser';
 import { Composition, staticFile } from 'remotion';
 
+import { ArchitectureCard } from './scenes/ArchitectureCard';
 import { BRoll } from './scenes/BRoll';
 import { SetnoteDemo, type DemoProps } from './SetnoteDemo';
 import { recordingFiles, SHOTS } from './shots';
@@ -44,6 +45,15 @@ export const RemotionRoot = () => (
       height={HEIGHT}
       durationInFrames={5 * FPS}
       defaultProps={{ src: 'broll/gym-wide.png', caption: 'The last set. The whole story.' }}
+    />
+    {/* The architecture scene on its own, for stills (README image). */}
+    <Composition
+      id="Architecture"
+      component={ArchitectureCard}
+      fps={FPS}
+      width={WIDTH}
+      height={HEIGHT}
+      durationInFrames={5 * FPS}
     />
     <Composition
       id="SetnoteDemo"
